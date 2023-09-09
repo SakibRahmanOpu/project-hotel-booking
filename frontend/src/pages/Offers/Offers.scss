@@ -1,0 +1,162 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient
+    (to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --textColor: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  /* box-shadow:  0 2px 8px rgba(178,178,178,0.334); */
+}
+.offer {
+  .secContainer {
+    .secIntro {
+      p {
+        color: black;
+        opacity: 75%;
+      }
+    }
+    .mainContent {
+      gap: 1rem;
+
+      .singleOffer {
+        border-radius: 1rem;
+        overflow: hidden;
+        padding: 0.5rem;
+        box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+
+        .icon {
+          font-size: 20px;
+          color: var(--textColor);
+        }
+        small {
+          font-weight: 500;
+          color: var(--textColor);
+        }
+        .location {
+          color: var(--primaryColor);
+        }
+
+        .destImage {
+          position: relative;
+          height: 200px;
+          width: 100%;
+
+          overflow: hidden;
+          border-radius: 1rem;
+          img {
+            height: 100%;
+          }
+          .discount {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background: var(--primaryColor);
+            color: var(--whiteColor);
+            border-radius: 3rem;
+            font-size: 10px;
+            font-weight: 500;
+          }
+        }
+
+        .offerBody {
+          padding: 1rem;
+          .price {
+            justify-content: space-between;
+            h4 {
+              color: var(--blackColor);
+              font-weight: 700;
+              font-size: 1.1rem;
+            }
+            .status {
+              padding: 5px 10px;
+              color: var(--primaryColor);
+              background: var(--greyText);
+              font-size: 10px;
+              font-weight: 600;
+              border-radius: 3rem;
+            }
+          }
+          .amentities {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 1rem 0;
+            gap: 0.5rem;
+
+            .singleAmenity {
+              padding: 5px 10px;
+              border-radius: 5px;
+              background: var(--greyText);
+              gap: 0.5rem;
+            }
+          }
+          .btn {
+            margin-top: 1rem;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding: 0.6rem;
+            color: var(--whiteColor);
+            font-weight: 600;
+            gap: 0.5rem;
+
+            .icon {
+              color: var(--whiteColor);
+            }
+          }
+        }
+        &:hover {
+          transform: translateY(-7px);
+        }
+      }
+    }
+    .videoCard {
+      margin-top: 2rem;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.73),
+        rgba(0, 0, 0, 0.609)
+      );
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .cardContent {
+        gap: 2rem;
+        padding: 2rem 1rem;
+        .cardText {
+          h2 {
+            color: var(--whiteColor);
+            font-weight: 600;
+            padding-bottom: 1rem;
+          }
+          p {
+            color: var(--whiteColor);
+            opacity: 0.7;
+            font-size: 12rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+          }
+        }
+      }
+      .cardVideo {
+        border: 2px solid var(--whiteColor);
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

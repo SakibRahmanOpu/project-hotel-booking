@@ -1,0 +1,8 @@
+.booking-list-delete-button div {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  color: #e07474 !important;
+  cursor: pointer;
+}/*# sourceMappingURL=BookingList.css.map */

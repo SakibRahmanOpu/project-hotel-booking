@@ -1,0 +1,18 @@
+.auth-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.auth-button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.auth-button h5 {
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=GoogleOauth.css.map */

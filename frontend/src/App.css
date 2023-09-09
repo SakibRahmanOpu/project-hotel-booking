@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap');
+ *{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
+ }
+ :root{
+  --primaryColor :hsl(199,100%,33%);
+  --secondaryColor :hsl(187,85%,43%);
+  --gradientColor : linear-gradient (to right , hsl(187,85%,43%) , hsl(199,100%,33%));
+  --whiteColor :hsl(0,0%,100%);
+  --blackColor :hsl(201,33%,16%);
+  --whiteColorDream:hsl(0,0%,93%);
+  --text-color: #6e7074;
+  --greyText :rgb(190,190,190);
+  --inputColor :rgb(239,239,239);
+  --bodyColor :rgb(240,240,246);
+  --cardBG :rgb(225,225,235);
+  /* box-shadow:  0 2px 8px rgba(178,178,178,0.334); */
+ }
+ a{
+    text-decoration:none !important;
+
+ }
+ li{
+    list-style: none !important;
+ }
+ .section{
+    padding : 4rem 0 2rem;
+ }
+ .container {
+    padding-left: 1.5 rem;
+    padding-right: 1.5rem;
+
+ }
+ .icon {
+    font-size: 2rem;
+    cursor: pointer;
+   
+    
+ }
+ .flex{
+    display: flex;
+    align-items: center;
+ }
+  .grid{
+    display :grid;
+    align-items:center;
+
+  }
+  .btn{
+    padding : .4rem 1.5rem;
+    /* background: var(--gradientColor); */
+    background: rgba(53, 85, 160, 0.916) !important;
+    border-radius: 3rem !important; 
+    border:none !important;
+outline: none !important;
+cursor :pointer !important;
+}
+.btn a{
+    color :var(--whiteColor);
+    font-weight: 500;
+    
+
+}
+
+.btn:hover{
+   background:var(--secondaryColor)
+}
+.btn:hover a{
+    background:  var(--secondaryColor);
+
+}
+.secIntro{
+   max-width: 70%;
+text-align: center;
+margin: 0 auto 2rem;
+}
+.secIntro .setTitle{
+   color: var(--blackColor);
+   line-height: 1.5rem;
+   padding-bottom: .5rem;
+}
+.secIntro p{
+   font-size: 13px;
+   color:var(--textColor);
+   font-weight: 500;
+}
+img,video{
+    width:100%;
+    height: auto;
+
+}
+input{
+    font-size: 100%;
+}
+body{
+    background: var(--bodyColor);
+}
+
+@media  screen and (min-width :556px) {
+   .mainContent, .singlePost{
+      grid-template-columns: repeat(2,1fr);
+   }
+}
+@media  screen and (min-width :884px) {
+   .mainContent {
+      grid-template-columns: repeat(3,1fr);
+   }
+}
+@media  screen and (min-width :1240px) {
+   .container {
+    width: 75% !important;
+    margin: auto !important;
+   }
+   .section{
+      padding: 5rem 0 3rem;
+   }
+   .secIntro{
+      margin: 0 auto 3rem;
+   }
+   .secIntro, .secTitle{
+      line-height: 2rem;
+      padding-bottom: 1rem;
+      font-size: 2.2rem;
+   }
+   .secIntro p{
+      font-size: 15px;
+
+   }
+}
+@media screen and (min-width:2560px){
+   body{
+      zoom: 1.7;
+   }
+}
+
+
+ ::selection{
+   background:var(--primaryColor);
+   color:var(--whiteColor)
+ }
+
+::-webkit-scrollbar{
+   width:10px;
+   background: var(--greyText);
+
+}
+
+::-webkit-scrollbar-thumb{
+   background:var(--primaryColor);
+   border-radius: 10px;
+   cursor: pointer;
+}

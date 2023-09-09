@@ -1,0 +1,37 @@
+.tour_card {
+  overflow: hidden;
+  .destImage {
+    position: relative;
+    height: 200px;
+    width: 100%;
+
+    overflow: hidden;
+    border-radius: 1rem;
+    img {
+      height: 100%;
+    }
+  }
+
+  .offerBody {
+    padding: 1rem;
+    .price {
+      justify-content: space-between;
+      h4 {
+        color: var(--blackColor);
+        font-weight: 700;
+        font-size: 1.1rem;
+      }
+      .status {
+        padding: 5px 10px;
+        color: var(--primaryColor);
+        background: var(--greyText);
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 3rem;
+      }
+    }
+    .btn {
+      color: white;
+    }
+  }
+}

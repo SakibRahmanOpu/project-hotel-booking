@@ -1,0 +1,35 @@
+.tour_card {
+  overflow: hidden;
+}
+.tour_card .destImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.tour_card .destImage img {
+  height: 100%;
+}
+.tour_card .offerBody {
+  padding: 1rem;
+}
+.tour_card .offerBody .price {
+  justify-content: space-between;
+}
+.tour_card .offerBody .price h4 {
+  color: var(--blackColor);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.tour_card .offerBody .price .status {
+  padding: 5px 10px;
+  color: var(--primaryColor);
+  background: var(--greyText);
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 3rem;
+}
+.tour_card .offerBody .btn {
+  color: white;
+}/*# sourceMappingURL=HotelCard.css.map */

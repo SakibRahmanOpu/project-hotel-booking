@@ -1,0 +1,15 @@
+.modal-backdrop {
+  z-index: 9999;
+  opacity: 0.2 !important;
+  background-color: #000;
+}
+
+.date-picker {
+  border-radius: 30px;
+  margin-left: 12px;
+  margin-top: 20px;
+}
+
+.check {
+  margin-top: 30px;
+}/*# sourceMappingURL=PayWithStripe.css.map */
